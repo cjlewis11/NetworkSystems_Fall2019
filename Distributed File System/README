@@ -1,0 +1,23 @@
+Chad Lewis
+Identikey: chle1876
+
+This is a Distributed File Server and Client to access the code!
+To run the server simply ensure that you have made the files using the command "make", then use the following commands to run the various servers:
+./dfs /DFS1 10001 &
+./dfs /DFS2 10002 &
+./dfs /DFS3 10003 &
+./dfs /DFS4 10004 &
+You must be in the Servers Folder to run these!
+
+To use the server open up the client directory, ensure the files are made using the command "make."
+Then use the command: ./dfc dfc.conf to run the client! From there follow the instructions on the screen!
+If you would like to change any of the client Configuration, please edit dfc.conf.
+
+The Client implements very simple XOR encryption and stores files encrpyted on the server!
+We also optimize traffic and only perform the GET once for each part of the file!
+
+To change the authorized users, enter a name and password in name:password format into dfs.conf!
+An example user could be joe:ILoveNetworkSystems!
+
+All Code is written in C.
+Server was built off the example echo server provided.
