@@ -1,0 +1,17 @@
+Name: Chad Lewis
+Identikey: chle1876
+
+This server is a simple proxy server that employs HTTP/1.1, we will handle requests fro GETs to other pages.
+If the page requires a secure connection or consistent connection, we will refuse the connections.
+Port :443 is a connection required port.
+
+To run the server simply ensure that you have made the files using the command "make", then use the command ./webproxy <PORTNUMBER> <cache time out in seconds> to start the server.
+To use the server open up your favorite browser, set your proxy settins to 127.0.0.1 with Port <PORTNUMBER>, then head on over to a site. It works best on simple sites such as netsys.cs.colrado.edu
+From there you can click on various links, try to enter your own addresses such as localhost:<PORTNUMBER>/images/exam.gif or  other links that might also be invalid.
+
+All Code is written in C.
+Server was built off the example echo server provided.
+
+To compile use command: make
+To run use command: ./webproxy <PORTNUMBER> <cache time out in seconds>
+To test, use any webbrowser, adjust proxy settings, and navigate to a site that uses HTTP 1.1
