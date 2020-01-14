@@ -1,0 +1,14 @@
+Name: Chad Lewis
+Identikey: chle1876
+
+This server is a simple HTTP server that will handle get requests for various file types.
+To run the server simply ensure that you have made the files using the command "make", then use the command ./webserver <PORTNUMBER> to start the server.
+To use the server open up your favorite browser and enter the following address: localhost:<PORTNUMBER>
+From there you can click on various links, try to enter your own addresses such as localhost:<PORTNUMBER>/images/exam.gif or  other ones that won't work.
+
+All Code is written in C.
+Server was built off the example echo server provided.
+
+To compile use command: make
+To run use command: ./webserver <PORTNUMBER>
+To test, use any webbrowser and navigate to: localhost:<PORTNUMBER>
